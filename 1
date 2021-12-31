@@ -1,0 +1,9 @@
+def capital_indexes(string):
+    upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    result = []
+    for i, l in enumerate(string):
+        if l in upper:
+            result.append(i)
+    return result
+
+print(capital_indexes("RYANnnKkK"))
